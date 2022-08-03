@@ -1,0 +1,56 @@
+@import "variables";
+
+#grid {
+  padding: $spacing-md;
+  margin-left: 50px;
+  margin-right: 15px;
+  margin-top: 18px;
+
+  @media (min-width: 506px) {
+    display: grid;
+    gap: $spacing-md;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 20px;
+  }
+  @media (min-width: 942px) {
+    display: grid;
+    gap: $spacing-md;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: 1316px) {
+    display: grid;
+    gap: $spacing-md;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #product {
+    border: 1px solid rgb(234, 211, 211);
+    text-align: center;
+    margin-bottom: $spacing-md;
+    background-color: $light;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+
+    width: 300px;
+    @media (max-width: 506px) {
+      width: 200px;
+      margin-left: 15px;
+    }
+    h3 {
+      margin-top: $spacing-md;
+    }
+    h4 {
+      font-weight: 400;
+    }
+    #taksit {
+      margin-top: $spacing-md;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+}
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}

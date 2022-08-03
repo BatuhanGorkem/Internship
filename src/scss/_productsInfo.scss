@@ -1,0 +1,43 @@
+#info {
+  display: flex;
+
+  h6 {
+    margin-top: 16px;
+  }
+  margin-left: 50px;
+}
+#categoryinfo {
+  // margin-left: 370px;
+  margin-top: 50px;
+  text-align: center;
+}
+#select {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 30px;
+
+  @media (max-width: 576px) {
+    display: block;
+  }
+  #Sort {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    @media (max-width: 576px) {
+      width: 190px;
+      margin-left: 40px;
+    }
+  }
+  #Filter {
+    width: 300px;
+    padding: 10px;
+    height: 40px;
+    margin-left: 60px;
+
+    @media (max-width: 576px) {
+      width: 190px;
+      margin-left: 0px;
+      margin-left: 40px;
+    }
+  }
+}

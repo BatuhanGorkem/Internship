@@ -1,0 +1,39 @@
+@import "variables";
+
+header {
+  background-color: $light;
+  height: 3em;
+  display: flex;
+  justify-content: space-between;
+  #icons {
+    margin-left: 40px;
+    @media (max-width: 576px) {
+      margin-right: 10px;
+    }
+  }
+}
+i {
+  padding: $spacing-md;
+  color: $dark;
+}
+.YB {
+  margin-top: 10px;
+  margin-right: 40px;
+  @media (max-width: 576px) {
+    margin-right: 20px;
+  }
+  button {
+    padding: 10px;
+  }
+  #blog {
+    background-color: $red;
+    color: $light;
+    padding: 8px;
+    border-style: none;
+  }
+  #yardım {
+    padding: 8px;
+    border-style: none;
+    background-color: $light;
+  }
+}
